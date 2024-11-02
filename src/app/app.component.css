@@ -1,0 +1,38 @@
+/* Style the navbar container */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;     
+    background-color: #134ad5; 
+    padding: 10px 0;         
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Style each navigation link */
+.nav-item {
+    color: white;           
+    padding: 10px 20px;     
+    text-decoration: none;  
+    font-weight: bold;      
+    border-radius: 4px;     
+    transition: background-color 0.3s, color 0.3s; 
+    margin: 0 10px;         
+}
+
+/* Hover effect for navigation links */
+.nav-item:hover {
+    background-color: #555; 
+    color: #ddd;           
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; 
+    }
+    .nav-item {
+        margin: 5px 0; 
+        width: 100%;   
+        text-align: center;
+    }
+}

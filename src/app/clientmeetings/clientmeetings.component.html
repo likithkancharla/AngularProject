@@ -1,0 +1,33 @@
+<h3 class="centered-heading">Client Meeting</h3>
+<h3 class="centered-heading">{{message}}</h3>
+<div class="container">
+    <!-- Meeting Title -->
+    <div class="input-group">
+        <label for="meetingTitle">Meeting Title:</label>
+        <input type="text" id="meetingTitle" placeholder="Enter Meeting Title" [(ngModel)]="topic">
+    </div>
+
+    <!-- Number of Participants -->
+    <div class="input-group">
+        <label for="meetingParticipants">Number of Participants:</label>
+        <input type="number" id="meetingParticipants" placeholder="Enter Number of Participants" [(ngModel)]="participants">
+    </div>
+
+    <!-- Meeting Date and Time -->
+    <div class="input-group">
+        <label for="meetingStartTime">Start Time:</label>
+        <input type="datetime-local" id="meetingStartTime" [(ngModel)]="startTime">
+    </div>
+
+    <!-- Meeting Details -->
+    <div class="input-group">
+        <label for="meetingDetails">Details:</label>
+        <textarea id="meetingDetails" placeholder="Enter Meeting Details" [(ngModel)]="details"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="button-group">
+        <button (click)="scheduleMeeting()">Schedule Meeting</button>
+    </div>
+
+</div>
